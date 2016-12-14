@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Cabin+Sketch|Coming+Soon|Reenie+Beanie|Sacramento" rel="stylesheet">
+</head>
+<body>
+
+<div id="wrapper">
+    <h1>Which Disney Park should you go to today?</h1>
+    <p>You had better answer these questions if you ever want to find out!</p>
+    <hr style="margin-top: 15px">
+
+
+    <form id="quiz">
+        <!-- Question 1 -->
+        <h2>How much time do you have?</h2>
+        <!-- Here are the choices for the first question. Each input tag must have the same name. For this question, the name is q1. -->
+        <!-- The value is which answer the choice corresponds to. -->
+        <label><input type="radio" name="q1" value="c1">
+            I've got all day!
+        </label><br />
+        <label><input type="radio" name="q1" value="c2">
+            I have most of the day.
+        </label><br />
+        <label><input type="radio" name="q1" value="c3">
+            I've got half a day.
+        </label><br />
+        <label><input type="radio" name="q1" value="c4">
+            I only have a few hours, the plane leaves at 3!
+        </label><br />
+
+        <!-- Question 2 -->
+        <h2>How much of a thrill seeker are you?</h2>
+        <!-- Here are the choices for the second question. Notice how each input tag has the same name (q2), but a different name than the previous question. -->
+        <label><input type="radio" name="q2" value="c1">
+            I could go for a roller coaster once in a while...
+        </label><br />
+        <label><input type="radio" name="q2" value="c2">
+            I am definitely that.
+        </label><br />
+        <label><input type="radio" name="q2" value="c3">
+            I love a good adrenaline rush!
+        </label><br />
+        <label><input type="radio" name="q2" value="c4">
+            I mostly prefer to sit in slow moving vehicles and take in the sights.
+        </label><br />
+
+        <!-- Question 3 -->
+        <h2>If you weren't in Orlando, what would you most likely be doing?</h2>
+        <!-- Choices for the third question -->
+        <label><input type="radio" name="q3" value="c1">
+            Trying on my new glass slippers and a pirate hat!
+        </label><br />
+        <label><input type="radio" name="q3" value="c2">
+            Packing for my next international flight!
+        </label><br />
+        <label><input type="radio" name="q3" value="c3">
+            Watching Netflix!
+        </label><br />
+        <label><input type="radio" name="q3" value="c4">
+            Hiking, skiing, or taking a walk through nature!
+        </label><br />
+
+        <!-- Question 4 -->
+        <h2>By the end of the day, how would you like to feel?</h2>
+        <!-- Choices for the fourth question -->
+        <label><input type="radio" name="q4" value="c1">
+            Magical
+        </label><br />
+        <label><input type="radio" name="q4" value="c2">
+            Tired
+        </label><br />
+        <label><input type="radio" name="q4" value="c3">
+            Entertained
+        </label><br />
+        <label><input type="radio" name="q4" value="c4">
+            Terrible, for using plastic lids and straws all your life... you monster.
+        </label><br />
+
+        <!-- Question 5 -->
+        <h2>What is your idea of fine dining?</h2>
+        <!-- Choices for the fourth question -->
+        <label><input type="radio" name="q5" value="c1">
+            A Victorian banquet. Very classy!
+        </label><br />
+        <label><input type="radio" name="q5" value="c2">
+            Kebab with belly dancers. Oh la la!
+        </label><br />
+        <label><input type="radio" name="q5" value="c3">
+            A Retro 1950s diner where you are literally forced to eat your vegetables. No joke.
+        </label><br />
+        <label><input type="radio" name="q5" value="c4">
+            ...is that an insect?
+        </label><br />
+
+        <button type="submit" id="submit" onclick="tabulateAnswers()">Submit Your Answers</button>
+        <button type="reset" id="reset" onclick="resetAnswer()">Reset</button>
+    </form>
+
+
+    <div id="answer">Your result will show up here!</div>
+</div>
+
+</body>
+</html>

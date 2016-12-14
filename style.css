@@ -1,0 +1,53 @@
+body {
+    font-family: sans-serif;
+    background-color: darkblue;
+}
+h1 {
+    font-family: 'Cabin Sketch', cursive;
+    background-color: cornflowerblue;
+    font-size: 45px;
+    text-align: center;
+    color: snow;
+    padding: 2px 0px;
+    border-radius: 10px;
+
+}
+h2 {
+    margin: 10px 40px 10px 0px;
+    font-family: 'Reenie Beanie', cursive;
+    font-size: 40px;
+    color: darkslategrey;
+    padding: 2px 0px;
+}
+#wrapper {
+    width: 800px;
+    margin: 0 auto;
+    background: whitesmoke;
+    padding: 10px 15px;
+    border-radius: 10px;
+}
+input {
+    margin: 5px 10px;
+}
+button {
+    font-size: 18px;
+    padding: 10px;
+    margin: 20px 0;
+    color: white;
+    border: 0;
+    border-radius: 10px;
+    border-bottom: 3px solid #333;
+    cursor: pointer;
+}
+input {
+    cursor: pointer;  }
+#submit {
+    background: darkslategrey}
+#reset {
+    background: darkslategrey;
+}
+#answer {
+    border: 1px dashed #ccc;
+    background: #eee;
+    padding: 10px;
+}
